@@ -7,6 +7,14 @@ if [ -f "$(which nvim)" ]; then
     alias vim=nvim
 fi
 
+# history
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=1000
+SAVEHIST=100000
+
+setopt inc_append_history
+setopt share_history
+
 # zsh completion
 autoload -Uz compinit
 compinit
