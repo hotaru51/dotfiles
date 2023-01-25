@@ -24,12 +24,12 @@ deleted = '✘ '
 [aws]
 format = 'on [$symbol($profile )]($style)'
 symbol = ''
-style = 'bold 208'
+style = 'bold red'
 
 [gcloud]
 format = 'on [$symbol$account(@$domain)]($style) '
 symbol = ''
-style = 'bold 27'
+style = 'bold blue'
 
 [package]
 disabled = true
