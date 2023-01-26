@@ -14,6 +14,7 @@ dotfile達
     * [startship](https://starship.rs/)
     * Git
     * tig
+    * lazygit(試用中)
     * yarn
     * fzf
     * jq
@@ -38,4 +39,14 @@ git clone git@github.com:hotaru51/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 chmod +x deploy.sh
 ./deploy.sh
+```
+
+## Memo
+
+そのうち自動化したい
+
+* gitのalias
+
+```sh
+git config --global alias.graph 'log --graph --oneline'
 ```
