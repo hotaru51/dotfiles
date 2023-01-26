@@ -6,6 +6,7 @@ if [ -f "$(which nvim)" ]; then
     alias vi=nvim
     alias vim=nvim
 fi
+test -f "$(which lazygit)" && alias lg=lazygit
 
 # history
 HISTFILE=$HOME/.zsh_history
