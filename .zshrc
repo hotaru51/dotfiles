@@ -26,11 +26,11 @@ if [ -f "$(which anyenv)" ]; then
 fi
 
 # ssh config hosts
-ssh-hosts() {
+function ssh-hosts() {
     if [ "$#" -ge 1 ]; then
-        grep -r -E '^[Hh]ost\s' ~/.ssh | awk '{print $NF}' | sed -e '/^\*$/d' | grep "${1}"
+        grep -r -E '^[Hh]ost\s' ~/.ssh | grep -Ev '[Hh]ost (ssm_\*|\*)$' | awk '{print $NF}' | grep "${1}"
     else
-        grep -r -E '^[Hh]ost\s' ~/.ssh | awk '{print $NF}' | sed -e '/^\*$/d'
+        grep -r -E '^[Hh]ost\s' ~/.ssh | grep -Ev '[Hh]ost (ssm_\*|\*)$' | awk '{print $NF}'
     fi
 }
 
