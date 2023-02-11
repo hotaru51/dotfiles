@@ -26,6 +26,7 @@ dotfile達
         * nodenv
         * goenv
         * tfenv
+    * [rain](https://github.com/aws-cloudformation/rain)
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 * [gcloud CLI](https://cloud.google.com/sdk/docs/install)
