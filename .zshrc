@@ -66,6 +66,14 @@ if [ -f "$(which starship)" ]; then
     eval "$(starship init zsh)"
 fi
 
+# gcloud
+case "${OSTYPE}" in
+    darwin* )
+        if [ -f "${HOME}/.google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/path.zsh.inc"; fi
+        if [ -f "${HOME}/.google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/completion.zsh.inc"; fi
+        ;;
+esac
+
 # read .zshrc_local
 if [ -f ~/.zshrc_local ]; then
     . ~/.zshrc_local
