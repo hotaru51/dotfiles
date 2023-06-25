@@ -13,11 +13,12 @@ dotfile達
         * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [startship](https://starship.rs/)
     * Git
-    * tig
     * lazygit(試用中)
     * yarn
     * fzf
     * jq
+    * GNU grep(macOSのみ)
+    * git-secrets
     * [jid](https://github.com/simeji/jid)
     * [terraform-ls](https://github.com/hashicorp/terraform-ls)
     * [anyenv](https://github.com/anyenv/anyenv)
@@ -50,4 +51,10 @@ chmod +x deploy.sh
 
 ```sh
 git config --global alias.graph 'log --graph --oneline'
+```
+
+* git-secrets
+
+```sh
+git secrets --register-aws --global
 ```
