@@ -13,11 +13,12 @@ dotfile達
         * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [startship](https://starship.rs/)
     * Git
-    * tig
     * lazygit(試用中)
     * yarn
     * fzf
     * jq
+    * GNU grep(macOSのみ)
+    * git-secrets
     * [jid](https://github.com/simeji/jid)
     * [terraform-ls](https://github.com/hashicorp/terraform-ls)
     * [anyenv](https://github.com/anyenv/anyenv)
@@ -27,6 +28,7 @@ dotfile達
         * goenv
         * tfenv
     * [rain](https://github.com/aws-cloudformation/rain)
+    * [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 * [gcloud CLI](https://cloud.google.com/sdk/docs/install)
@@ -50,4 +52,10 @@ chmod +x deploy.sh
 
 ```sh
 git config --global alias.graph 'log --graph --oneline'
+```
+
+* git-secrets
+
+```sh
+git secrets --register-aws --global
 ```
