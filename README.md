@@ -18,6 +18,7 @@ dotfile達
     * fzf
     * jq
     * GNU grep(macOSのみ)
+    * ripgrep
     * git-secrets
     * [jid](https://github.com/simeji/jid)
     * [terraform-ls](https://github.com/hashicorp/terraform-ls)
