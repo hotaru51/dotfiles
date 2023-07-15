@@ -74,6 +74,12 @@ case "${OSTYPE}" in
         ;;
 esac
 
+# Terraform
+if [ -f "$(which terraform)" ];then
+    autoload -U +X bashcompinit && bashcompinit
+    complete -o nospace -C $(which terraform) terraform
+fi
+
 # read .zshrc_local
 if [ -f ~/.zshrc_local ]; then
     . ~/.zshrc_local
