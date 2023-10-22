@@ -15,13 +15,15 @@ dotfile達
     * Git
     * lazygit(試用中)
     * yarn
+        * `--ignore-dependencies` でインストール
     * fzf
     * jq
-    * GNU grep(macOSのみ)
+    * grep (GNU grep, macOSのみ)
     * ripgrep
     * git-secrets
     * [jid](https://github.com/simeji/jid)
     * [terraform-ls](https://github.com/hashicorp/terraform-ls)
+        * `brew install hashicorp/tap/terraform-ls`
     * [anyenv](https://github.com/anyenv/anyenv)
         * rbenv
         * pyenv
@@ -29,9 +31,9 @@ dotfile達
         * goenv
         * tfenv
     * [rain](https://github.com/aws-cloudformation/rain)
-    * [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
+* [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
 * [gcloud CLI](https://cloud.google.com/sdk/docs/install)
 * [HackGen font](https://github.com/yuru7/HackGen)
 
