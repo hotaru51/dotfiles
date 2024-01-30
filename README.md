@@ -31,6 +31,8 @@ dotfile達
         * goenv
         * tfenv
     * [rain](https://github.com/aws-cloudformation/rain)
+    * direnv
+    * [oci-cli](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/cliinstall.htm)
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 * [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
