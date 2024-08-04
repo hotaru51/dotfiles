@@ -30,6 +30,11 @@ if [ -f "$(which anyenv)" ]; then
     eval "$(anyenv init -)"
 fi
 
+# fzf
+if [ -f "$(which fzf)" ]; then
+    source <(fzf --zsh)
+fi
+
 # ssh config hosts
 function ssh-hosts() {
     if [ "$#" -ge 1 ]; then
