@@ -77,12 +77,8 @@ if [ -f "$(which starship)" ]; then
 fi
 
 # gcloud
-case "${OSTYPE}" in
-    darwin* )
-        if [ -f "${HOME}/.google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/path.zsh.inc"; fi
-        if [ -f "${HOME}/.google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/completion.zsh.inc"; fi
-        ;;
-esac
+if [ -f "${HOME}/.google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "${HOME}/.google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/completion.zsh.inc"; fi
 
 # read .zshrc_local
 if [ -f ~/.zshrc_local ]; then
