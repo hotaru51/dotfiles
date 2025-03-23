@@ -81,16 +81,11 @@ if [ -f "${HOME}/.google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.google-clou
 if [ -f "${HOME}/.google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/completion.zsh.inc"; fi
 
 # macOSのDocker補完
-if [[ ${OSTYPE} =~ ^darwin.*$ ]] && [ -f "$(which brew)" ]; then
-    if [ -d /Applications/Docker.app ] && [ -d $(brew --prefix)/share/zsh/site-functions ]; then
-        if [ ! -L $(brew --prefix)/share/zsh/site-functions/_docker ]; then
-            ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion $(brew --prefix)/share/zsh/site-functions/_docker
-        fi
+if [[ ${OSTYPE} =~ ^darwin.*$ ]] && [ -f "$(which docker)" ]; then
+    test ! -d ${HOME}/.docker/completions && mkdir -p ${HOME}/.docker/completions
+    test ! -f ${HOME}/.docker/completions/_docker && docker completion zsh > ${HOME}/.docker/completions/_docker
 
-        if [ ! -L $(brew --prefix)/share/zsh/site-functions/_docker-compose ]; then
-            ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion $(brew --prefix)/share/zsh/site-functions/_docker-compose
-        fi
-    fi
+    export FPATH="$HOME/.docker/completions:$FPATH"
 fi
 
 # read .zshrc_local
