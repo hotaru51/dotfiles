@@ -80,6 +80,14 @@ fi
 if [ -f "${HOME}/.google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "${HOME}/.google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/.google-cloud-sdk/completion.zsh.inc"; fi
 
+# macOSのDocker補完
+if [[ ${OSTYPE} =~ ^darwin.*$ ]] && [ -f "$(which docker)" ]; then
+    test ! -d ${HOME}/.docker/completions && mkdir -p ${HOME}/.docker/completions
+    test ! -f ${HOME}/.docker/completions/_docker && docker completion zsh > ${HOME}/.docker/completions/_docker
+
+    export FPATH="$HOME/.docker/completions:$FPATH"
+fi
+
 # read .zshrc_local
 if [ -f ~/.zshrc_local ]; then
     . ~/.zshrc_local
