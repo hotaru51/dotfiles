@@ -25,11 +25,6 @@ if [ -f "$(which direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi
 
-# anyenv
-if [ -f "$(which anyenv)" ]; then
-    eval "$(anyenv init -)"
-fi
-
 # fzf
 if [ -f "$(which fzf)" ]; then
     source <(fzf --zsh)
