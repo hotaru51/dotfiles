@@ -13,7 +13,7 @@ dotfile達
         * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [startship](https://starship.rs/)
     * Git
-    * lazygit(試用中)
+    * lazygit
     * yarn
         * `--ignore-dependencies` でインストール
     * fzf
@@ -24,12 +24,13 @@ dotfile達
     * [jid](https://github.com/simeji/jid)
     * [terraform-ls](https://github.com/hashicorp/terraform-ls)
         * `brew install hashicorp/tap/terraform-ls`
-    * [anyenv](https://github.com/anyenv/anyenv)
-        * rbenv
-        * pyenv
-        * nodenv
-        * goenv
-        * tfenv
+    * [mise](https://github.com/jdx/mise)
+        * ruby
+        * python
+        * node.js
+        * go
+        * terraform
+        * gemini-cli(予定)
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
