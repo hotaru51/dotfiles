@@ -25,6 +25,11 @@ if [ -f "$(which direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi
 
+# mise
+if [ -f "$(which mise)" ]; then
+    eval "$(mise activate zsh)"
+fi
+
 # fzf
 if [ -f "$(which fzf)" ]; then
     source <(fzf --zsh)
