@@ -25,9 +25,9 @@ if [ -f "$(which direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi
 
-# anyenv
-if [ -f "$(which anyenv)" ]; then
-    eval "$(anyenv init -)"
+# mise
+if [ -f "$(which mise)" ]; then
+    eval "$(mise activate zsh)"
 fi
 
 # fzf
