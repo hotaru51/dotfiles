@@ -28,7 +28,7 @@ function deploy_dotfile() {
     # 配置先にシンボリックリンクがすでに存在する場合
     if [ -L "${dst_path}" ]; then
         # シンボリックリンクのリンク先が元ファイルと同じならスキップ
-        if [ "$(realpath "${dst_path}")" = "${src_path}" ]; then
+        if [ "$(readlink -f "${dst_path}")" = "${src_path}" ]; then
             echo "Skip symlink creation. [${dst_path}]"
             return
         fi
