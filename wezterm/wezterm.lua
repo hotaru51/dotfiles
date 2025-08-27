@@ -33,5 +33,7 @@ config.font = wezterm.font('HackGen Console NF')
 config.font_size = osVal(15, 10, 10)
 
 config.keys = require('keymap')
+config.use_ime = true
+config.macos_forward_to_ime_modifier_mask = "CTRL|SHIFT"
 
 return config
