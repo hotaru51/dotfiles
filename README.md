@@ -34,6 +34,7 @@ dotfile達
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
     * WezTerm(cask)
+    * gemini-cli
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 * [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
