@@ -1,0 +1,12 @@
+# NeoVim
+.nvim.lua
+.nvimrc
+.exrc
+
+# mise
+.mise.toml
+.mise.*.toml
+.mise/
+
+# macOS
+.DS_Store

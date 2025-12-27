@@ -33,6 +33,7 @@ dotfile達
         * gemini-cli(予定)
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
+    * WezTerm(cask)
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 * [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
@@ -47,6 +48,19 @@ git clone git@github.com:hotaru51/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 chmod +x deploy.sh
 ./deploy.sh
+```
+
+### loc_list.txt について
+
+管理対象のファイルを追加した場合は `loc_list.txt` 内に下記フォーマットで追記する  
+対象がファイル、ディレクトリに関わらず、指定した対象へのシンボリックリンクが配置先に作成される
+
+```
+<対象ファイル or ディレクトリ>:<~/を起点とした配置先>
+
+# 例)
+zshrc:.zshrc     # ~/.zshrc でシンボリックリンクが作成される
+git:.config/git  # ~/.config/git でシンボリックリンクが作成される
 ```
 
 ## Memo

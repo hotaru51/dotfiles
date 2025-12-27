@@ -1,0 +1,5 @@
+zshrc:.zshrc
+zprofile:.zprofile
+starship.toml:.config/starship.toml
+wezterm:.config/wezterm
+git:.config/git
