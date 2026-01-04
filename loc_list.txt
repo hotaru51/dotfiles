@@ -3,3 +3,4 @@ zprofile:.zprofile
 starship.toml:.config/starship.toml
 wezterm:.config/wezterm
 git:.config/git
+default-npm-packages:.default-npm-packages

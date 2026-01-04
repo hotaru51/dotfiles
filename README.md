@@ -28,6 +28,8 @@ dotfile達
         * ruby
         * python
         * node.js
+            * npm
+                * tree-sitter-cli
         * go
         * terraform
         * gemini-cli(予定)
