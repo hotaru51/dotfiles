@@ -7,7 +7,7 @@ local osVal = helpers.osVal
 
 -- Windowsのデフォルトプログラム設定
 if helpers.is_win() then
-  config.default_prog = { 'wsl', '-d', 'Ubuntu-20.04', '--cd', '~' }
+  config.default_prog = { 'wsl', '-d', 'Ubuntu-24.04', '--cd', '~' }
 end
 
 config.color_scheme = 'tokyonight_night'
