@@ -9,8 +9,6 @@ dotfile達
 
 * [Homebrew](https://brew.sh/)
     * GCC(Homebrewでインストール推奨)
-    * NeoVim
-        * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [startship](https://starship.rs/)
     * Git
     * lazygit
@@ -32,7 +30,8 @@ dotfile達
                 * tree-sitter-cli
         * go
         * terraform
-        * gemini-cli(予定)
+        * NeoVim
+            * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
     * WezTerm(cask)
