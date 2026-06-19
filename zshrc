@@ -2,10 +2,6 @@
 alias ls="ls --color"
 alias ll="ls -l"
 alias la="ls -a"
-if [ -f "$(which nvim)" ]; then
-    alias vi=nvim
-    alias vim=nvim
-fi
 test -f "$(which lazygit)" && alias lg=lazygit
 
 # history
@@ -28,6 +24,11 @@ fi
 # mise
 if [ -f "$(which mise)" ]; then
     eval "$(mise activate zsh)"
+fi
+
+if [ -f "$(which nvim)" ]; then
+    alias vi=nvim
+    alias vim=nvim
 fi
 
 # fzf

@@ -9,8 +9,6 @@ dotfile達
 
 * [Homebrew](https://brew.sh/)
     * GCC(Homebrewでインストール推奨)
-    * NeoVim
-        * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [startship](https://starship.rs/)
     * Git
     * lazygit
@@ -22,8 +20,6 @@ dotfile達
     * ripgrep
     * git-secrets
     * [jid](https://github.com/simeji/jid)
-    * [terraform-ls](https://github.com/hashicorp/terraform-ls)
-        * `brew install hashicorp/tap/terraform-ls`
     * [mise](https://github.com/jdx/mise)
         * ruby
         * python
@@ -32,7 +28,8 @@ dotfile達
                 * tree-sitter-cli
         * go
         * terraform
-        * gemini-cli(予定)
+        * NeoVim
+            * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
     * WezTerm(cask)

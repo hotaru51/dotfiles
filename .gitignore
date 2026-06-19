@@ -1,1 +1,7 @@
 old/
+
+# mise (local)
+mise.local.toml
+.mise.local.toml
+mise.*.local.toml
+.mise.*.local.toml
