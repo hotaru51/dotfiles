@@ -20,8 +20,6 @@ dotfile達
     * ripgrep
     * git-secrets
     * [jid](https://github.com/simeji/jid)
-    * [terraform-ls](https://github.com/hashicorp/terraform-ls)
-        * `brew install hashicorp/tap/terraform-ls`
     * [mise](https://github.com/jdx/mise)
         * ruby
         * python
