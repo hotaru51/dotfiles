@@ -11,6 +11,9 @@ dotfile達
     * GCC(Homebrewでインストール推奨)
     * [startship](https://starship.rs/)
     * Git
+    * git-secrets
+    * GitHub CLI (gh)
+    * DuckDB
     * lazygit
     * yarn
         * `--ignore-dependencies` でインストール
@@ -18,7 +21,6 @@ dotfile達
     * jq
     * grep (GNU grep, macOSのみ)
     * ripgrep
-    * git-secrets
     * [jid](https://github.com/simeji/jid)
     * [mise](https://github.com/jdx/mise)
         * ruby
