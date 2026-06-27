@@ -21,6 +21,17 @@ if helpers.is_win() then
   }
 end
 
+-- NeoVim 0.12.xでvsplitして右側のウィンドウをスクロールすると左側の表示が崩れる事象の回避
+-- https://github.com/neovim/neovim/issues/35133
+-- 今のところmacOSのみ発生
+-- WezTerm nightlyでは修正されているようなので暫定対応
+if helpers.is_mac() then
+  local sts, _, _ = wezterm.run_child_process({ 'infocmp', 'wezterm' })
+  if sts then
+    config.term = 'wezterm'
+  end
+end
+
 config.color_scheme = 'tokyonight_night'
 -- 現状initial_colsとinitial_rowsは外部ディスプレイでの起動時には正しく反映されない
 -- https://github.com/wez/wezterm/issues/2958
