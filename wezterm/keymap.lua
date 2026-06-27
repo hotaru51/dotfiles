@@ -92,4 +92,19 @@ if helpers.is_mac() then
   end
 end
 
+-- Windowsの場合、Launcher Menu表示のキーバインドを追加
+if helpers.is_win() then
+  local win_keys = {
+    {
+      key = 'l',
+      mods = 'ALT',
+      action = act.ShowLauncher
+    }
+  }
+
+  for _, key in ipairs(win_keys) do
+    table.insert(keys, key)
+  end
+end
+
 return keys
