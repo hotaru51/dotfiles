@@ -5,3 +5,4 @@ wezterm:.config/wezterm
 git:.config/git
 default-npm-packages:.default-npm-packages
 com_mise/conf.d:.config/mise/conf.d
+lazygit/config.yml:.config/lazygit/config.yml
