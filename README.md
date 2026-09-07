@@ -34,6 +34,8 @@ dotfile達
             * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
+    * [Vivify](https://github.com/jannis-baum/vivify)
+        * `jannis-baum/tap/vivify`
     * WezTerm(cask)
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
