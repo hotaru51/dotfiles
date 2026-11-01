@@ -9,14 +9,11 @@ dotfile達
 
 * [Homebrew](https://brew.sh/)
     * GCC(Homebrewでインストール推奨)
-    * [startship](https://starship.rs/)
+    * [starship](https://starship.rs/)
     * Git
     * git-secrets
     * GitHub CLI (gh)
-    * DuckDB
     * lazygit
-    * yarn
-        * `--ignore-dependencies` でインストール
     * fzf
     * jq
     * grep (GNU grep, macOSのみ)
@@ -26,18 +23,19 @@ dotfile達
         * ruby
         * python
         * node.js
-            * npm
-                * tree-sitter-cli
         * go
         * terraform
+        * yarn
         * NeoVim
             * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
+        * herdr
+        * DuckDB
+        * tree-sitter-cli
     * [rain](https://github.com/aws-cloudformation/rain)
     * direnv
     * [Vivify](https://github.com/jannis-baum/vivify)
         * `jannis-baum/tap/vivify`
-    * WezTerm(cask)
-    * Claude Code(cask)
+    * WezTerm(cask) ※macOSのみ
 * [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 * [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
