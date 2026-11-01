@@ -5,3 +5,5 @@ wezterm:.config/wezterm
 git:.config/git
 com_mise/conf.d:.config/mise/conf.d
 lazygit/config.yml:.config/lazygit/config.yml
+herdr/config.toml:.config/herdr/config.toml
+homebrew/Brewfile:.config/homebrew/Brewfile
