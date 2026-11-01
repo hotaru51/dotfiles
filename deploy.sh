@@ -56,3 +56,15 @@ while read line
 do
     deploy_dotfile "${line}"
 done < ${work_dir}/loc_list.txt
+
+# WSLの場合のみ、WezTermの設定をWindows側に転送
+# ${HOME} に /mnt/c/Users/<ユーザ名>へのシンボリックリンクを作成しておくこと
+if [ -n "${WSL_DISTRO_NAME}" ] && [ -L "${HOME}/c" ]; then
+    if [ ! -d "${HOME}/c/.config/wezterm" ];then
+        echo "create directory. [${HOME}/c/.config/wezterm]"
+        mkdir ${HOME}/c/.config/wezterm
+    fi
+
+    echo "Deploy WezTerm settings to the Windows side."
+    cp ${work_dir}/wezterm/* ${HOME}/c/.config/wezterm
+fi
