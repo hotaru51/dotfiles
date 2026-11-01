@@ -3,7 +3,8 @@
 set -ue
 
 work_dir="$(cd $(dirname $0) && pwd)"
-backup_dir="${work_dir}/old"
+repo_root_dir="$(cd ${work_dir} && git rev-parse --show-toplevel)"
+backup_dir="${repo_root_dir}/old"
 
 test ! -d ${backup_dir} && mkdir ${backup_dir}
 
@@ -16,7 +17,7 @@ function deploy_dotfile() {
     local src_file="$(echo "${1}" | cut -d ':' -f 1)"
     local dst_file="$(echo "${1}" | cut -d ':' -f 2)"
 
-    local src_path="${work_dir}/${src_file}"
+    local src_path="${repo_root_dir}/${src_file}"
     local dst_path="${HOME}/${dst_file}"
 
     # src_pathが存在しない場合はスキップ
@@ -55,16 +56,16 @@ function deploy_dotfile() {
 while read line
 do
     deploy_dotfile "${line}"
-done < ${work_dir}/loc_list.txt
+done < ${repo_root_dir}/loc_list.txt
 
 # WSLの場合のみ、WezTermの設定をWindows側に転送
 # ${HOME} に /mnt/c/Users/<ユーザ名>へのシンボリックリンクを作成しておくこと
-if [ -n "${WSL_DISTRO_NAME}" ] && [ -L "${HOME}/c" ]; then
+if [ -n "${WSL_DISTRO_NAME:-}" ] && [ -L "${HOME}/c" ]; then
     if [ ! -d "${HOME}/c/.config/wezterm" ];then
         echo "create directory. [${HOME}/c/.config/wezterm]"
         mkdir ${HOME}/c/.config/wezterm
     fi
 
     echo "Deploy WezTerm settings to the Windows side."
-    cp ${work_dir}/wezterm/* ${HOME}/c/.config/wezterm
+    cp ${repo_root_dir}/wezterm/* ${HOME}/c/.config/wezterm
 fi
