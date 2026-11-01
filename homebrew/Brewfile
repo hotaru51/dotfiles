@@ -1,0 +1,28 @@
+brew 'direnv'
+brew 'fzf'
+brew 'gcc'
+brew 'gh'
+brew 'git'
+brew 'git-secrets'
+brew 'jid'
+brew 'jq'
+brew 'lazygit'
+brew 'mise'
+brew 'rain'
+brew 'ripgrep'
+brew 'starship'
+tap 'jannis-baum/tap'
+brew 'jannis-baum/tap/vivify', trusted: true
+
+# for ruby-build
+# see https://github.com/rbenv/ruby-build/wiki#macos
+brew 'openssl@3'
+brew 'readline'
+brew 'libyaml'
+brew 'gmp'
+brew 'autoconf'
+
+if OS.mac?
+  brew 'grep'
+  cask 'wezterm'
+end
