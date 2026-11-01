@@ -1,2 +1,6 @@
 [tools]
 neovim = "0.12.3"
+duckdb = "1.4.5"
+yarn = "latest"
+herdr = "latest"
+tree-sitter = "latest"
