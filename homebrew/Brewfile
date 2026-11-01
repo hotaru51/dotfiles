@@ -13,6 +13,8 @@ brew 'ripgrep'
 brew 'starship'
 tap 'jannis-baum/tap'
 brew 'jannis-baum/tap/vivify', trusted: true
+brew 'awscli' unless system('command -v aws > /dev/null 2>&1')
+brew 'aws-sam-cli' unless system('command -v sam > /dev/null 2>&1')
 
 # for ruby-build
 # see https://github.com/rbenv/ruby-build/wiki#macos
