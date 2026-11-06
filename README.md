@@ -18,8 +18,10 @@ dotfileやツール等のセットアップスクリプトなど
 ```sh
 git clone git@github.com:hotaru51/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-./deploy.sh
+./install.sh
 ```
+
+初回セットアップ以降、ファイルのデプロイのみ行う場合は `scripts/deploy.sh` のみ実行する
 
 ### loc_list.txt について
 
