@@ -1,58 +1,27 @@
 # dotfiles
 
-dotfile達  
-[macOS用](https://github.com/hotaru51/macos-dotfiles)、[Ubuntu用](https://github.com/hotaru51/ubuntu-dotfiles)で別々に管理していたものを共通化(される予定)
+dotfileやツール等のセットアップスクリプトなど
 
 ## Tool
 
-よく使うツール類メモ(WIP)
-
-* [Homebrew](https://brew.sh/)
-    * GCC(Homebrewでインストール推奨)
-    * [startship](https://starship.rs/)
-    * Git
-    * git-secrets
-    * GitHub CLI (gh)
-    * DuckDB
-    * lazygit
-    * yarn
-        * `--ignore-dependencies` でインストール
-    * fzf
-    * jq
-    * grep (GNU grep, macOSのみ)
-    * ripgrep
-    * [jid](https://github.com/simeji/jid)
-    * [mise](https://github.com/jdx/mise)
-        * ruby
-        * python
-        * node.js
-            * npm
-                * tree-sitter-cli
-        * go
-        * terraform
-        * NeoVim
-            * 設定周りは[nvim-config](https://github.com/hotaru51/nvim-config)参照
-    * [rain](https://github.com/aws-cloudformation/rain)
-    * direnv
-    * [Vivify](https://github.com/jannis-baum/vivify)
-        * `jannis-baum/tap/vivify`
-    * WezTerm(cask)
-    * Claude Code(cask)
-* [AWS CLI](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html)
+* Homebrew
+    * `homebrew/Brewfile` を参照
+* mise
+    * `com_mise/conf.d` 配下のファイルを参照
+* パッケージマネージャ管理外
     * [Session manager用プラグイン](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
-* [AWS SAM CLI](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)
-* [gcloud CLI](https://cloud.google.com/sdk/docs/install)
-* [HackGen font](https://github.com/yuru7/HackGen)
+    * [gcloud CLI](https://cloud.google.com/sdk/docs/install)
+    * [HackGen font](https://github.com/yuru7/HackGen)
 
 ## Usage
 
 ```sh
-# 暫定手順(macOSのみ動作確認済み)
 git clone git@github.com:hotaru51/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-chmod +x deploy.sh
-./deploy.sh
+./install.sh
 ```
+
+初回セットアップ以降、ファイルのデプロイのみ行う場合は `scripts/deploy.sh` のみ実行する
 
 ### loc_list.txt について
 

@@ -19,6 +19,8 @@ if helpers.is_win() then
       args = { 'cmd.exe' }
     },
   }
+
+  config.allow_win32_input_mode = false
 end
 
 -- NeoVim 0.12.xでvsplitして右側のウィンドウをスクロールすると左側の表示が崩れる事象の回避
